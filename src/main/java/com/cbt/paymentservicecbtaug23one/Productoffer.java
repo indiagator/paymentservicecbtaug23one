@@ -11,16 +11,19 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @Entity
-@Table(name = "orderstatuses")
-public class Orderstatus {
+@Table(name = "productoffers")
+public class Productoffer {
     @Id
     @Column(name = "id", nullable = false, length = 10)
     private String id;
 
-    @Column(name = "orderid", length = 10)
-    private String orderid;
+    @Column(name = "qty", nullable = false)
+    private Integer qty;
 
-    @Column(name = "status", length = 20)
-    private String status;
+    @Column(name = "unitprice", nullable = false)
+    private Integer unitprice;
+
+    @Column(name = "offername", length = 500)
+    private String offername;
 
 }
