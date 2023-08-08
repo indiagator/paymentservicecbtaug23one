@@ -11,22 +11,19 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @Entity
-@Table(name = "payments")
-public class Payment {
+@Table(name = "orders")
+public class Order {
     @Id
-    @Column(name = "id", nullable = false, length = 10)
-    private String id;
-
-    @Column(name = "orderid", length = 10)
+    @Column(name = "orderid", nullable = false, length = 10)
     private String orderid;
 
     @Column(name = "offerid", length = 10)
     private String offerid;
 
-    @Column(name = "status", length = 10)
-    private String status;
+    @Column(name = "buyername", length = 50)
+    private String buyername;
 
-    @Column(name = "paymentwalletlink", length = 10)
-    private String paymentwalletlink;
+    @Column(name = "bid")
+    private Integer bid;
 
 }

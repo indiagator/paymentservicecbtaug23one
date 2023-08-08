@@ -11,8 +11,8 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @Entity
-@Table(name = "payments")
-public class Payment {
+@Table(name = "orderstatuses")
+public class Orderstatus {
     @Id
     @Column(name = "id", nullable = false, length = 10)
     private String id;
@@ -20,13 +20,7 @@ public class Payment {
     @Column(name = "orderid", length = 10)
     private String orderid;
 
-    @Column(name = "offerid", length = 10)
-    private String offerid;
-
-    @Column(name = "status", length = 10)
+    @Column(name = "status", length = 20)
     private String status;
-
-    @Column(name = "paymentwalletlink", length = 10)
-    private String paymentwalletlink;
 
 }

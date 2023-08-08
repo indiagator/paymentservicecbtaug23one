@@ -26,4 +26,7 @@ public class Productoffer {
     @Column(name = "offername", length = 500)
     private String offername;
 
+    @Column(name = "sellername", length = 50)
+    private String sellername;
+
 }
